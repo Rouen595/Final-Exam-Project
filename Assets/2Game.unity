@@ -2950,8 +2950,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.06438656, y: 0}
   m_AnchorMax: {x: 0.521, y: 0.15300001}
-  m_AnchoredPosition: {x: 2.5, y: 29}
-  m_SizeDelta: {x: -5, y: -75.838356}
+  m_AnchoredPosition: {x: -14, y: 5.5714}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1514416036
 MonoBehaviour:
@@ -2986,7 +2986,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: (seconds left)
+  m_Text: 
 --- !u!222 &1514416037
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3007,7 +3007,7 @@ GameObject:
   - component: {fileID: 1612476256}
   - component: {fileID: 1612476255}
   m_Layer: 5
-  m_Name: Label5
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3029,8 +3029,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16.28212, y: 76.17642}
-  m_SizeDelta: {x: -83.8504, y: -9.758156}
+  m_AnchoredPosition: {x: -14, y: 40.1}
+  m_SizeDelta: {x: -99.844025, y: 2.90345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612476255
 MonoBehaviour:
@@ -3062,8 +3062,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Seconds left:'
 --- !u!222 &1612476256
