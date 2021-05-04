@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1Intro.unity
     guid: 5390a8ae3d74591408abbcc8ae4d0af4
-  - enabled: 1
-    path: Assets/2HighScores.unity
-    guid: c10f7f7a289204c44887e19db256c6b7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/2Game.unity
     guid: 874a25ec5e0b45744b0017713fe84d50

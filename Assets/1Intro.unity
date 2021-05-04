@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 78808668}
   - component: {fileID: 78808667}
   - component: {fileID: 78808666}
+  - component: {fileID: 78808669}
   m_Layer: 5
   m_Name: LivesDropdown
   m_TagString: Untagged
@@ -365,12 +366,30 @@ MonoBehaviour:
     m_Options:
     - m_Text: Select number of lives
       m_Image: {fileID: 0}
+    - m_Text: 1
+      m_Image: {fileID: 0}
+    - m_Text: 2
+      m_Image: {fileID: 0}
+    - m_Text: 3
+      m_Image: {fileID: 0}
+    - m_Text: 4
+      m_Image: {fileID: 0}
+    - m_Text: 5
+      m_Image: {fileID: 0}
+    - m_Text: 6
+      m_Image: {fileID: 0}
+    - m_Text: 7
+      m_Image: {fileID: 0}
+    - m_Text: 8
+      m_Image: {fileID: 0}
+    - m_Text: 9
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 78808669}
+        m_TargetAssemblyTypeName: ChooseNumLives, Assembly-CSharp
+        m_MethodName: NumLives
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -419,6 +438,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78808664}
   m_CullTransparentMesh: 0
+--- !u!114 &78808669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78808664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63396550d47fb824190b1ed2b347405a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectLives: {fileID: 78808666}
 --- !u!1 &210604074
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 392321467}
   - component: {fileID: 392321468}
+  - component: {fileID: 392321469}
   m_Layer: 5
   m_Name: TimeSlider
   m_TagString: Untagged
@@ -580,13 +613,37 @@ MonoBehaviour:
   m_FillRect: {fileID: 38610612}
   m_HandleRect: {fileID: 22716682}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 30
   m_MaxValue: 90
   m_WholeNumbers: 1
   m_Value: 45
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 392321469}
+        m_TargetAssemblyTypeName: ChangeSpeed, Assembly-CSharp
+        m_MethodName: Change
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &392321469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392321466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7928726319a514882d1b8dbbb0d7a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &397986041
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -4.9999847, y: 0}
+  m_AnchoredPosition: {x: -4.9999695, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1128019985
@@ -1181,7 +1238,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Place instructions here.......
+  m_Text: Enter name, choose time limit, and select number of lives.
 --- !u!222 &1407080972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1226,7 +1283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7378457, y: 0.037136067}
   m_AnchorMax: {x: 0.975, y: 0.14957279}
-  m_AnchoredPosition: {x: -2.0059967, y: -3.5}
+  m_AnchoredPosition: {x: -2.0059814, y: -3.5}
   m_SizeDelta: {x: 10.400024, y: 6.4000244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1462633082
@@ -1272,9 +1329,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2041781131}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: EnterGame
+      - m_Target: {fileID: 1660949190}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1638,6 +1695,7 @@ GameObject:
   - component: {fileID: 1660949188}
   - component: {fileID: 1660949187}
   - component: {fileID: 1660949186}
+  - component: {fileID: 1660949190}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1729,6 +1787,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1660949190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660949185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f658eadec68a34892905dcdee64c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usernameInput: {fileID: 0}
 --- !u!1 &1761183080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +2053,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1660949190}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SaveUsername
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -2180,8 +2263,6 @@ GameObject:
   - component: {fileID: 2041781130}
   - component: {fileID: 2041781129}
   - component: {fileID: 2041781128}
-  - component: {fileID: 2041781131}
-  - component: {fileID: 2041781132}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2254,30 +2335,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2041781131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041781127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 824c7c2a520eb409683b221b486ab314, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2041781132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041781127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b15330b676744f06a5ac89304a00810, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2099992538
 GameObject:
   m_ObjectHideFlags: 0
