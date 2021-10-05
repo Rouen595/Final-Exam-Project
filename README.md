@@ -8,6 +8,7 @@ The exam you should be doing on May 4, 2021
 
 1. [Installation](https://github.com/Rouen595/Final-Exam-Project/#instalation)
 2. [Operation](https://github.com/Rouen595/Final-Exam-Project/#operation)
+3. [Dependencies](https://github.com/Rouen595/Final-Exam-Project/#dependencies)
 
 
 ### Installation
@@ -17,3 +18,8 @@ To install, click on the "code" dropdown menu and select "download as zip". Once
 ### Operation
 
 To operate the high score table, play the game and then click "save score" on the exit screen. That will save the score. Only click it once, because it will save as many times as you click it. Click "replay" and play the game again to add different scores. 
+
+
+### Dependencies
+
+Requires Unity to run.
